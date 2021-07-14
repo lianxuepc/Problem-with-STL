@@ -7,19 +7,19 @@ const int N = 110;
 int n, m;
 char s[N][N];
 
-void print1(int i, int j) { //左下，左上，右上
+void print1(int i, int j) { 
     printf("%d %d %d %d %d %d\n", i, j, i, j + 1, i + 1, j);
 }
 
-void print2(int i, int j) { //左上，左下，右下
+void print2(int i, int j) { 
     printf("%d %d %d %d %d %d\n", i, j, i + 1, j, i + 1, j + 1);
 }
 
-void print3(int i, int j) { //左上，右上， 右下
+void print3(int i, int j) {
     printf("%d %d %d %d %d %d\n", i, j, i, j + 1, i + 1, j + 1);
 }
 
-void print4(int i, int j) { //左下，右下，右上
+void print4(int i, int j) { 
     printf("%d %d %d %d %d %d\n", i + 1, j, i, j + 1, i + 1, j + 1);
 }
 
@@ -39,7 +39,7 @@ int main() {
 
         for (int i = 1; i <= n; i ++ )
             for (int j = 1; j <= m; j ++ )
-                if (s[i][j] == '1') {//这里每次传进去的i，j对应要选择的矩阵的左上角，要做一些转换
+                if (s[i][j] == '1') {
                     if (i == 1 && j < m) {
                         print1(i, j);
                         print2(i, j);
