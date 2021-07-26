@@ -1,11 +1,15 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
-int main() 
+int main(void)
 {
-    int x=3,y=4;
-    cout<<ceil(x/y);
-    system("pause");
-    return 0;
+    for(int i=0;i<10;i++)
+    {
+        int j=i+1;
+        for(int j=i+1;i<10;i++)
+        {
+            if
+        }
+    }
+    
 }
