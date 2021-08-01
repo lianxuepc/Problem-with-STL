@@ -29,7 +29,7 @@ int main()
     num.assign(str,6,5);
     flag.assign(str,12,1);
 
-    //使用substr函数进行截取子串,str的从第n到第m个，substr(n,m);
+    //使用substr函数进行截取子串,str的从第n个开始往后m个，substr(n,m);
     // language=str.substr(0,1);
 
     //转换成数字

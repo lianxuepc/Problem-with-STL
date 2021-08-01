@@ -25,11 +25,12 @@ int main(void)
 			(it->second)++;
 //			cout<<"wuwu"<<endl;
 		}
-        it=u1.find(temp);
+		it=u1.find(temp);
 		cout<<it->second<<" ";
 		
 		
 	}
-	system("pause");
+	
 	
 }
+
