@@ -1,27 +1,33 @@
 #include <iostream>
-#include <math.h>
-#include <cstring> 
-#include <unordered_map>
-#include <vector>
-#define N 1100;
+#include <string>
+#include <string.h>
 using namespace std;
+
 
 int main(void)
 {
-	string temp("ls -a -l -a documents -b"),op("albwx");
-	vector<string> opList;
-	for(int i=0;i<temp.length();i++)
+	int n;
+	cin>>n;
+	cin.ignore();
+	while(n--)
 	{
-		int j=temp.find_first_of(' ',i),k=temp.find_first_of(' ',j+1);
-		cout<<j<<" "<<k<<endl;
-		if(j!=string::npos)
-			i=j;
-		if(k!=string::npos)
+		int idx=0;
+		char str[1000];
+		cin.getline(str,1000);
+		cout<<"str len:"<<strlen(str)<<endl;
+		while(idx<strlen(str))
+		{
+
+		}
+		const char din[2]=" ";
+		char *token=strtok(str,din);
+		while(token)
 		{
 			
+			token=strtok(NULL,din);
 		}
 		
-		
+
 	}
-	system("pause");
+
 }
