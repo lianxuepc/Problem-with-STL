@@ -6,28 +6,17 @@ using namespace std;
 
 int main(void)
 {
-	int n;
-	cin>>n;
-	cin.ignore();
-	while(n--)
-	{
-		int idx=0;
-		char str[1000];
-		cin.getline(str,1000);
-		cout<<"str len:"<<strlen(str)<<endl;
-		while(idx<strlen(str))
-		{
-
-		}
-		const char din[2]=" ";
-		char *token=strtok(str,din);
-		while(token)
-		{
-			
-			token=strtok(NULL,din);
-		}
-		
-
-	}
+	string ts;
+    char *token=strtok(t,"/");
+    while(token)
+    {
+        ts=token;
+        tv.push_back(ts);
+        token=strtok(NULL,"/");
+    }
+    ts=*(tv.end());
+    tv.pop_back();
+    oplist.push_back({tv,ts});
+    cout<<ts<<endl;
 
 }
